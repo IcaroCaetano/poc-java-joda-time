@@ -27,10 +27,12 @@ public class BusinessDate {
     }
 
     private boolean isBusinessDay(LocalDate d) {
+
         return !isWeekend(d) && !holidayProvider.isHoliday(d);
     }
 
     private boolean isWeekend(LocalDate d) {
+
         return d.getDayOfWeek().getValue() >= 6;
     }
 }
