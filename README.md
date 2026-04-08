@@ -1,0 +1,19 @@
+# poc=java-joda-time
+
+## 1 - API
+
+- LocalDateTime().now()
+- LocalDate.of(2030, 1, 1)
+- DateTime()
+
+Endpoints
+
+```
+GET /date/java-time  
+GET /date/joda
+```
+
+## 2 - Domain-Driven Time Modeling
+
+- java.time.DayOfWeek
+- 
