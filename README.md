@@ -16,4 +16,5 @@ GET /date/joda
 
 - java.time.DayOfWeek
 - java.time.LocalDate;
-- import java.time.LocalTime;
+- java.time.LocalTime;
+- java.time.LocalDateTime
