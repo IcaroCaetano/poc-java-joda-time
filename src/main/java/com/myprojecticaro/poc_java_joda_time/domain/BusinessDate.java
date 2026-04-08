@@ -11,6 +11,7 @@ public record BusinessDate(LocalDate date) {
 
     public BusinessDate nextBusinessDay() {
         LocalDate next = date.plusDays(1);
+
         while (next.getDayOfWeek().getValue() >= 6) {
             next = next.plusDays(1);
         }
