@@ -18,10 +18,14 @@ public class DateController {
     @GetMapping("/java-time")
     public String javaTime() {
         return service.getJavaTime();
+
+        // Output: 2026-04-07T22:33:46.649
     }
 
     @GetMapping("/joda")
     public String jodaTime() {
         return service.getJodaTime();
+
+        // Output: 2026-04-07T22:43:23.770-03:00
     }
 }
