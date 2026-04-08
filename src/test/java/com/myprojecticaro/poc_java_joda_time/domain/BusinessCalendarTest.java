@@ -27,4 +27,19 @@ class BusinessCalendarTest {
 
         assertTrue(result);
     }
+
+    @Test
+    void shouldValidateRealScenario() {
+        HolidayProvider holidayProvider = new SimpleHolidayProvider();
+
+        BusinessHours businessHours =
+                new BusinessHours(LocalTime.of(9, 0), LocalTime.of(18, 0));
+
+        BusinessCalendar calendar =
+                new BusinessCalendar(holidayProvider, businessHours);
+
+        LocalDateTime dateTime = LocalDateTime.of(2026, 4, 8, 10, 0);
+
+        assertTrue(calendar.isBusinessTime(dateTime));
+    }
 }

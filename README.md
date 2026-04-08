@@ -4,7 +4,6 @@
 
 - LocalDateTime().now()
 - LocalDate.of(2030, 1, 1)
-- DateTime()
 
 Endpoints
 
@@ -16,4 +15,5 @@ GET /date/joda
 ## 2 - Domain-Driven Time Modeling
 
 - java.time.DayOfWeek
+- java.time.LocalDate;
 - import java.time.LocalTime;
