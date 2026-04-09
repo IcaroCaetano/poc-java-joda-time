@@ -98,7 +98,7 @@ class JodaBusinessDateTest {
 
     @Test
     void shouldSkipMultipleDaysCorrectly() {
-        JodaBusinessDate date = new JodaBusinessDate(new DateTime(2026, 4, 10, 10, 0)); // sexta
+        JodaBusinessDate date = new JodaBusinessDate(new DateTime(2026, 4, 10, 10, 0));
 
         JodaBusinessDate result = date
                 .nextBusinessDay()
