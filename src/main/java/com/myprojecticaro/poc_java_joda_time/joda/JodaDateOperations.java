@@ -4,6 +4,14 @@ import org.joda.time.DateTime;
 
 public class JodaDateOperations {
 
+    public static DateTime addYears(int years) {
+        return new DateTime().plusYears(years);
+    }
+
+    public static DateTime addMonths(int months){
+        return new DateTime().plusMonths(months);
+    }
+
     public static DateTime addDays(int days) {
 
         return new DateTime().plusDays(days);
@@ -40,5 +48,16 @@ public class JodaDateOperations {
     public static DateTime minusSeconds(int seconds) {
 
         return new DateTime().minusSeconds(seconds);
+    }
+
+    public static DateTime addDateTime(int years, int months, int days,
+                                       int hours, int minutes, int seconds) {
+        return new DateTime()
+                .plusYears(years)
+                .plusMonths(months)
+                .plusDays(days)
+                .plusHours(hours)
+                .plusMinutes(minutes)
+                .plusSeconds(seconds);
     }
 }
