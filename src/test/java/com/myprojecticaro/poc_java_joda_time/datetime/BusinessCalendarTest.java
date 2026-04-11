@@ -1,6 +1,6 @@
-package com.myprojecticaro.poc_java_joda_time.domain;
+package com.myprojecticaro.poc_java_joda_time.datetime;
 
-import com.myprojecticaro.poc_java_joda_time.domain.model.BusinessHours;
+import com.myprojecticaro.poc_java_joda_time.datetime.model.BusinessHours;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;

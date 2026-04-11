@@ -1,4 +1,4 @@
-package com.myprojecticaro.poc_java_joda_time.domain;
+package com.myprojecticaro.poc_java_joda_time.datetime;
 
 import java.time.LocalDate;
 import java.util.Set;

@@ -1,4 +1,4 @@
-package com.myprojecticaro.poc_java_joda_time.domain.model;
+package com.myprojecticaro.poc_java_joda_time.datetime.model;
 
 import java.time.LocalTime;
 
