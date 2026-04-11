@@ -1,4 +1,4 @@
-# poc=java-joda-time
+# poc-java-joda-time
 
 ### 1 - API
 
@@ -19,4 +19,3 @@ GET /date/joda
 - java.time.LocalTime;
 - java.time.LocalDateTime
 
-### 3
