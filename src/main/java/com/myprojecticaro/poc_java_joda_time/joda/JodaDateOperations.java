@@ -9,12 +9,13 @@ public class JodaDateOperations {
     }
 
     public static DateTime addMonths(int months){
+
         return new DateTime().plusMonths(months);
     }
 
-    public static DateTime addDays(int days) {
+    public static DateTime addDays(DateTime base, int days) {
 
-        return new DateTime().plusDays(days);
+        return base.plusDays(days);
     }
 
     public static DateTime addHours(int hours) {
