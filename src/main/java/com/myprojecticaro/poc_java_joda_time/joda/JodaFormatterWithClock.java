@@ -9,6 +9,7 @@ import java.time.Instant;
 
 public class JodaFormatterWithClock {
 
+    // congela o tempo
     private final Clock clock;
 
     private static final DateTimeFormatter FORMATTER_DATETIME =
@@ -24,7 +25,11 @@ public class JodaFormatterWithClock {
 
     private DateTime now() {
         Instant instant = clock.instant();
-        return new DateTime(instant.toEpochMilli());
+
+        return new DateTime(
+                instant.toEpochMilli(),
+                org.joda.time.DateTimeZone.forID(clock.getZone().getId())
+        );
     }
 
     public String formatDateTimeNow() {
